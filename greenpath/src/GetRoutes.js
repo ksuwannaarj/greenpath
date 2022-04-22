@@ -64,7 +64,7 @@ function Route(props) {
 
 class GetRoutes extends React.Component {
   async fetchFromApi(addressOrigin, addressDestination) {
-    const fetchAddress = `https://greenpath-3ivy5.ondigitalocean.app/`;
+    const fetchAddress = `wss://greenpath-3ivy5.ondigitalocean.app:8080/ws`;
     this.props.onLoading(true);
 
     const response = await fetch(fetchAddress);
